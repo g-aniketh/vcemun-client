@@ -95,7 +95,7 @@ export function Committees() {
               <div className="absolute inset-0 flex items-center justify-center z-20">
                 <div className="relative w-[220px] h-[220px] flex items-center justify-center">
                   <MotionImage
-                    src="/images/logos/Shield.png"
+                    src="/images/logos/optimized/Shield.webp"
                     alt="VCEMUN Shield"
                     width={220}
                     height={220}
@@ -105,7 +105,7 @@ export function Committees() {
                     variants={shieldVariants}
                   />
                   <MotionImage
-                    src="/images/logos/Wings.png"
+                    src="/images/logos/optimized/Wings.webp"
                     alt="VCEMUN Wings"
                     width={300}
                     height={300}

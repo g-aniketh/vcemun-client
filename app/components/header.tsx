@@ -54,7 +54,7 @@ export function Header() {
         <div className="container flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/images/logos/munvcelogo.png"
+              src="/images/logos/optimized/munvcelogo.webp"
               alt="VCEMUN Logo"
               width={40}
               height={40}
@@ -136,7 +136,7 @@ export function Header() {
             <Link href="https://vardhaman.org/" target="_blank">
               <Image
                 className="px-1"
-                src="/images/logos/vardhamanlogo.png"
+                src="/images/logos/optimized/vardhamanlogo.webp"
                 alt="VCEMUN Logo"
                 width={45}
                 height={45}
@@ -145,7 +145,7 @@ export function Header() {
             </Link>
             <Image
               className="px-1"
-              src="/images/logos/saclogomain.png"
+              src="/images/logos/optimized/saclogomain.webp"
               alt="VCEMUN Logo"
               width={50}
               height={50}

@@ -2,12 +2,10 @@ import { Hero } from "@/app/components/hero";
 import { Committees } from "@/app/components/committees";
 import { Contact } from "@/app/components/contact";
 import { RevealAnimation } from "@/app/components/reveal-animation";
-import { SecGenDirectorGen } from "./components/sec-gen-director-gen";
 import Partners from "./components/partners";
 import { LoadingScreen } from "./components/loading-screen";
 import DateAnnouncement from "./components/date-announcement";
 import { RouteLoading } from "./components/route-loading";
-import { CountdownTimer } from "./components/countdown-timer";
 
 export default function Home() {
   return (
@@ -19,13 +17,7 @@ export default function Home() {
         <DateAnnouncement />
       </RevealAnimation>
       <RevealAnimation>
-        <CountdownTimer />
-      </RevealAnimation>
-      <RevealAnimation>
         <Committees />
-      </RevealAnimation>
-      <RevealAnimation>
-        <SecGenDirectorGen />
       </RevealAnimation>
       <RevealAnimation>
         <Partners />

@@ -28,24 +28,8 @@ export default function ECOSOCPage() {
         </p>
       </motion.section>
 
-      <motion.section
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4 }}
-        className="text-center space-y-4"
-      >
-        <h2 className="text-4xl font-bold">Agenda</h2>
-        <p className="text-2xl">
-          Combating illicit trading and wildlife resource trafficking
-        </p>
-        <div className="rounded-md bg-red-700/70 py-2 px-4 text-white text-xl font-semibold">
-          Registrations are closed for VCEMUN.
-        </div>
-        <div className="rounded-md bg-gray-800/70 py-2 px-4 text-white text-lg font-medium">
-          <span className="text-gray-300">Venue:</span>{" "}
-          <span className="text-white">ECOSOC: 1015</span>
-        </div>
-      </motion.section>
+      {/* This committee is not active for the upcoming edition.
+          Keeping the page for reference but hiding agenda/registration state. */}
 
       <motion.section
         initial={{ opacity: 0, y: 20 }}

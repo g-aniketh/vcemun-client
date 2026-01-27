@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 // import { CallToAction } from "@/app/components/call-to-action";
 
-export default function DISECPage() {
+export default function AIPPMPage() {
   return (
     <div className="py-24 space-y-32">
       <motion.section
@@ -14,16 +14,16 @@ export default function DISECPage() {
         className="max-w-4xl mx-auto text-center space-y-8"
       >
         <p className="text-xl leading-relaxed text-gray-300">
-          The Disarmament and International Security Committee (DISEC) is the
-          First Committee of the United Nations General Assembly. Established in
-          1945, it focuses on issues concerning global peace, disarmament, and
-          international security. DISEC addresses topics such as nuclear
-          disarmament, arms control, regional security, and the regulation of
-          weapons of mass destruction. It plays a crucial role in formulating
-          resolutions and agreements aimed at reducing global militarization and
-          preventing armed conflict. While its resolutions are non-binding,
-          DISEC influences the discourse on international security issues,
-          encouraging collaboration among member states to create a safer world.
+          The All India Political Parties Meet (AIPPM) simulates the dynamic
+          and fast-paced world of Indian politics, bringing together delegates
+          representing major political parties to debate, negotiate, and build
+          consensus on issues of national importance. AIPPM provides a platform
+          for delegates to engage in parliamentary-style debates, draft
+          resolutions, and work collaboratively across party lines to address
+          pressing national challenges. This committee offers a unique
+          opportunity to understand the complexities of Indian democracy, party
+          politics, and the legislative process while developing skills in
+          negotiation, public speaking, and strategic thinking.
         </p>
       </motion.section>
       <motion.section
@@ -38,19 +38,19 @@ export default function DISECPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
           {[
             {
-              name: "Sudeep Banerjee Chopra",
+              name: "Executive Board Member 1",
               role: "Chair",
-              image: "/images/team/sudeep.png",
+              image: "/images/team/placeholder.jpg",
             },
             {
-              name: "Siddha Sankalp Topalle",
+              name: "Executive Board Member 2",
               role: "Vice Chair",
-              image: "/images/team/siddu.jpg",
+              image: "/images/team/placeholder.jpg",
             },
             {
-              name: "Ananya Charaka",
+              name: "Executive Board Member 3",
               role: "Rapporteur",
-              image: "/images/team/ananya.jpg",
+              image: "/images/team/placeholder.jpg",
             },
           ].map((member, index) => (
             <motion.div
@@ -80,3 +80,4 @@ export default function DISECPage() {
     </div>
   );
 }
+

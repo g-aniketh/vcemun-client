@@ -18,8 +18,8 @@ import { useEffect, useState } from "react";
 const committees = [
   { title: "DISEC", href: "/committees/disec" },
   { title: "UNHRC", href: "/committees/unhrc" },
-  { title: "ECOSOC", href: "/committees/ecosoc" },
-  { title: "International Press", href: "/committees/internationalpress" },
+  { title: "AIPPM", href: "/committees/aippm" },
+  { title: "International Press (IP)", href: "/committees/internationalpress" },
 ];
 
 export function Header() {
@@ -73,13 +73,14 @@ export function Header() {
             <NavigationMenu>
               <NavigationMenuList className="flex gap-3">
                 <NavigationMenuItem>
-                  <Link href="/" legacyBehavior passHref>
-                    <NavigationMenuLink
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href="/"
                       className={navigationMenuTriggerStyle()}
                     >
                       Home
-                    </NavigationMenuLink>
-                  </Link>
+                    </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
@@ -105,23 +106,25 @@ export function Header() {
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <Link href="/usg" legacyBehavior passHref>
-                    <NavigationMenuLink
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href="/usg"
                       className={navigationMenuTriggerStyle()}
                     >
                       USG
-                    </NavigationMenuLink>
-                  </Link>
+                    </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
-                  <Link href="/chairs" legacyBehavior passHref>
-                    <NavigationMenuLink
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href="/chairs"
                       className={navigationMenuTriggerStyle()}
                     >
                       Chairs
-                    </NavigationMenuLink>
-                  </Link>
+                    </Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <Link href="/register">

@@ -11,8 +11,8 @@ const DateAnnouncement: React.FC = () => {
   const [mainTextComplete, setMainTextComplete] = useState(false);
   const [allTextComplete, setAllTextComplete] = useState(false);
   const elementRef = useRef<HTMLDivElement>(null);
-  const fullMainText = "MUN is on the 21st and 22nd of March!";
-  const fullPromotionText = "Registrations are CLOSED.";
+  const fullMainText = "Event dates will be revealed soon.";
+  const fullPromotionText = "Registrations will open soon.";
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -88,7 +88,7 @@ const DateAnnouncement: React.FC = () => {
 
         {mainTextComplete && (
           <div
-            className={`text-sm sm:text-base md:text-xl text-center text-red-500 font-semibold mt-4 ${
+            className={`text-sm sm:text-base md:text-xl text-center text-amber-400 font-semibold mt-4 ${
               !allTextComplete ? "typewriter" : ""
             }`}
           >

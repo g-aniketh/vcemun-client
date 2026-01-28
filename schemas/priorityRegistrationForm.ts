@@ -59,12 +59,8 @@ export const priorityRegistrationSchema = z
       .string()
       .min(1, { message: "Prior MUN experience is required" })
       .max(500, { message: "Prior experiences are too long" }),
-    transportationRequired: z.enum(["yes", "no"], {
-      errorMap: () => ({ message: "Please select if transportation is required" }),
-    }),
-    foodPreference: z.enum(["veg", "nonveg"], {
-      errorMap: () => ({ message: "Please select your food preference" }),
-    }),
+    transportationRequired: z.enum(["yes", "no"]),
+    foodPreference: z.enum(["veg", "nonveg"]),
     transactionId: z
       .string()
       .min(1, { message: "Transaction ID is required" })

@@ -3,7 +3,8 @@ import { createUploadthing, type FileRouter } from "uploadthing/next";
 const f = createUploadthing();
 
 export const ourFileRouter = {
-  paymentScreenshot: f({ image: { maxFileSize: "5MB", maxFileCount: 1 } })
+  // UploadThing only allows specific size presets; "4MB" is the closest to our 5MB client limit.
+  paymentScreenshot: f({ image: { maxFileSize: "4MB", maxFileCount: 1 } })
     // No auth / extra metadata needed for now
     .middleware(() => ({}))
     .onUploadComplete(({ file }) => {

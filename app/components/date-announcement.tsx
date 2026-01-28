@@ -1,8 +1,10 @@
 "use client";
 
 import React, { useEffect, useState, useRef } from "react";
-import "../DateAnnouncement.css";
+import Link from "next/link";
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import "../DateAnnouncement.css";
 
 const DateAnnouncement: React.FC = () => {
   const [mainText, setMainText] = useState("");
@@ -11,7 +13,7 @@ const DateAnnouncement: React.FC = () => {
   const [mainTextComplete, setMainTextComplete] = useState(false);
   const [allTextComplete, setAllTextComplete] = useState(false);
   const elementRef = useRef<HTMLDivElement>(null);
-  const fullMainText = "Event dates will be revealed soon.";
+  const fullMainText = "VCEMUN will be held on February 27th & 28th, 2026.";
   const fullPromotionText = "Priority Round registrations are open now.";
 
   useEffect(() => {
@@ -96,6 +98,13 @@ const DateAnnouncement: React.FC = () => {
           </div>
         )}
       </motion.div>
+      <div className="mt-8">
+        <Link href="/register">
+          <Button className="px-8 py-3 text-base font-semibold bg-red-600 hover:bg-red-700 rounded-full shadow-lg">
+            Priority Round Registrations are open now
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 };

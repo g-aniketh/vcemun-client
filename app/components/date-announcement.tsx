@@ -12,7 +12,7 @@ const DateAnnouncement: React.FC = () => {
   const [allTextComplete, setAllTextComplete] = useState(false);
   const elementRef = useRef<HTMLDivElement>(null);
   const fullMainText = "Event dates will be revealed soon.";
-  const fullPromotionText = "Registrations will open soon.";
+  const fullPromotionText = "Priority Round registrations are open now.";
 
   useEffect(() => {
     const observer = new IntersectionObserver(

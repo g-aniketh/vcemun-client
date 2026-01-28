@@ -28,7 +28,7 @@ export const committees = [
     title: "AIPPM",
     description: "All India Political Parties Meet",
     href: "/committees/aippm",
-    url: "/images/committees/aippm.png",
+    url: "/images/committees/aippm.jpeg",
     width: "350px",
     height: "200px",
   },
